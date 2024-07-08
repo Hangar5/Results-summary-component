@@ -36,6 +36,7 @@ body{
     background-color: hsl(0deg 0% 100%);
 }
 
+/* MAIN */
 main{
     display: flex;
     max-width: 736px;
@@ -45,14 +46,14 @@ main{
     background-color: var(--White);
     box-shadow: 13px 21px 15px -3px rgb(33 150 243 / 7%);
 }
-
+/* RESULT-CONTENT */
 .result-content{
     max-width: 368px;
     width: 100%;
     border-radius: 32px;
     background: linear-gradient(180deg, hsl(251.49deg 97.92% 62.35%) 0%, hsl(241.91deg 83.19% 55.69%) 85%);
 }
-
+/* RESULT-CONTAINER */
 .result-container{
     display: flex;
     flex-direction: column;
@@ -60,14 +61,14 @@ main{
     align-items: center;
     padding: 38px 60px;
 }
-
+/* RESULT-CONTAINER - TITLE */
 .result-container .title{
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 23.9px;
     margin-right: 6px;
     color: var(--Light-lavender);
 }
-
+/* CIRCLE-RESULT */
 .circle-result{
     display: flex;
     flex-direction: column;
@@ -80,7 +81,7 @@ main{
     border-radius: 50%;
     background: linear-gradient(180deg, hsl(255.45deg 71.06% 46.08%) 0%, hsl(246.06deg 86.24% 57.25%) 85%);
 }
-
+/* CIRCLE-M76 */
 .circle-m76{
     font-size: 72px;
     color: var(--White);
@@ -89,14 +90,14 @@ main{
     margin-top: 7px;
     margin-right: 2px;
 }
-
+/* CIRCLE-M100 */
 .circle-m100{
     color: var(--Light-lavender);
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 700;
     margin-right: 3px;
 }
-
+/* RESULT-CONTAINER - SUBTITLE */
 .result-container .subtitle{
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 32px;
@@ -104,7 +105,7 @@ main{
     margin-right: 5px;
     color: var(--White);
 }
-
+/* RESULT-CONTAINER - TEXT */
 .result-container .text{
     font-family: 'Hanken Grotesk', sans-serif;
     color: var(--Light-lavender);
@@ -113,21 +114,21 @@ main{
     margin-right: 1px;
     font-weight: 500;
 }
-
+/* SUMMARY-CONTENT */
 .summary-content{
     max-width: 368px;
     width: 100%;
     padding: 38px 40px;
     border-radius: 30px;
 }
-
+/* SUMMARY-CONTAINER - SUBTITLE */
 .summary-container .subtitle{
     font-family: 'Hanken Grotesk', sans-serif;
     color: var(--Dark-gray-blue);
     font-size: 24px;
     margin-bottom: 26px;
 }
-
+/* COLUM1 */
 .colum1{
     max-width: 288px;
     width: 100%;
@@ -140,7 +141,7 @@ main{
     border-radius: 10px;
     font-weight: 600;
 }
-
+/* COLUM1 - SPAN */
 .colum1 > span{
     display: flex;
     align-items: center;
@@ -150,43 +151,43 @@ main{
     gap: 12px;
     margin-top: 2px;
 }
-
+/* REACTION */
 .reaction{
     background-color: hsl(6deg 100% 98.04%);
     color: var(--Light-red);
 }
-
+/* MEMORY */
 .memory{
     background-color: hsl(41.54deg 100% 97.45%);
     color: var(--Orangey-yellow);
 }
-
+/* VERBAL */
 .verbal{
     background-color: hsl(180deg 44.44% 96.47%);
     color: var(--Green-teal);
 }
-
+/* VISUAL */
 .visual{
     background-color: hsl(240deg 71.43% 97.25%);
     color: var(--Cobalt-blue);
 }
-
+/* R80 */
 .r80{
     color: hsl(230deg 3.19% 63.14%);
 }
-
+/* R80 */
 .r80 > span{
     color: var(--Dark-gray-blue);
     margin-right: 3.4px;
 }
-
+/* NUMBER */
 .number{
     font-size: px;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-top: 3px;
     font-weight: 700;
 }
-
+/* BTN-SUMM */
 .btn-summ{
     max-width: 288px;
     width: 100%;
@@ -200,4 +201,35 @@ main{
     font-weight: 600;
     letter-spacing: 0.19px;
     font-family: 'Hanken Grotesk', sans-serif;
+}
+
+@media (max-width: 769px){
+    /* BODY */
+    body{
+        grid-template-rows: 100% 100%;
+    }
+    /* MAIN */
+    main{
+        flex-direction: column;
+        max-width: none;
+        width: auto;
+        box-shadow: none;
+    }
+    /* RESULT-CONTAINER - TITLE */
+    .result-container .title{
+        font-size: 21px;
+    }
+    /* RESULT-CONTENT */
+    .result-content{
+        max-width: none;
+        border-radius: 0px 0px 20px 32px;
+    }
+    /* SUMMARY-CONTENT */
+    .summary-content{
+        margin: 0 auto;
+    }
+    /* SUMMARY-CONTAINER - SUBTITLE */
+    .summary-container .subtitle{
+        font-size: 20px;
+    }
 }
